@@ -1,11 +1,7 @@
 // @ts-check
 
 export const Header = () => {
-    return(
-      <div>
-        <header>yabuのアプリ</header>
-      </div>
-    );
-  };
+  return <></>
+}
 
 export default Header
