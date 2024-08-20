@@ -2,6 +2,9 @@
 
 import './App.css'
 import { useState } from 'react';
+import Header from './Header';
+import Description from './Description';
+import DogImage from './DogImage';
 
 /**
  * @type {() => JSX.Element}
@@ -17,12 +20,11 @@ export const App = () => {
   }
 
   return (
-    <div>
-      <header>yabuのアプリ</header>
-      <h2>Hello, world!</h2>
-      <p>犬の画像を表示するサイトです</p>
-      <img src={dogUrl} alt="犬の画像" />
+    <div className="App">
+      <Header />
+      <Description />
+      <DogImage url={dogUrl} />
       <button onClick={randomApi}>更新</button>
     </div>
-  )
-}
+  );
+};
