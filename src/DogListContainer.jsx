@@ -1,7 +1,13 @@
-// @ts-check
+import { useEffect, useState } from "react";
+
 
 export const DogListContainer = () => {
-  return <></>
+  const [breeds,setbreeds] = useState();
+  'https://dog.ceo/api/breeds/list/all'
+  return (
+  <>
+  </>
+  )
 }
 
-export default DogListContainer
+export default DogListContainer;
