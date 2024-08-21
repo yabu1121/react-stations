@@ -9,12 +9,10 @@ export const Description = () => {
   //処理の時の引数をいまいち理解できていない
   const reload = () => {
   fetch('https://dog.ceo/api/breeds/image/random')
-  .then((res)=>{
-    return res.json();
-  })
+  .then(res=>res.json())
   .then((data) => {
     setDogUrl(data.message);
-  })
+  });
   }
   return (
   <>
